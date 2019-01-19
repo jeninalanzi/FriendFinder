@@ -56,7 +56,6 @@ module.exports = function(app) {
                    // This will remove negative integers from results and assign value of "results" into the totalDifference property.
            });
 
-
        };
 
        // NEXT is for arraySort to sort all the differences in ascending order (least to most).
