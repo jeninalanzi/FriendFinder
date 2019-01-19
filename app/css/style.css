@@ -1,0 +1,17 @@
+.jumbotron {
+    background-color: #aa8bc4;
+};
+
+.slide {
+    margin: 10px;
+    padding: 10px;
+    clear: right;
+}
+
+.survey-row {
+    margin: 0 30px;
+}
+
+select {
+    margin: 0 0 20px 0;
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!--My own CSS Link-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <title>FriendFinder | Take The Survey to Find a Friend!</title>
+
+</head>
+
+<body>
+
+    <!--Jumbotron for the header-->
+    <div class="jumbotron text-center">
+        <h1 class="display-2">FriendFinder</h1>
+        <hr class="my-4">
+        <p>Take the simple survey below to find a friend today!</p>
+    </div>
+
+    <!--FORM BEGINS HERE-->
+    <div class="row survey-row">
+        <h3><b>About You</b></h3>
+    </div>
+
+    <div class="row survey-row">
+        <div class="col-md-12">
+
+            <!--!!!!! FORM METHOD: POST IS DESIGNATED HERE !!!!!-->
+            <form role="form">
+                <!--Name Inquiry-->
+                <div class="form-group">
+                    <label for="userNameInput">
+                        <h5>Name (Required)</h5>
+                    </label>
+                    <input type="text" class="form-control" id="userNameInput">
+                </div>
+
+                <!--Photo URL Inquiry-->
+                <div class="form-group">
+                    <label for="userPhotoURL">
+                        <h5>Link To Photo Image (Required)</h5>
+                    </label>
+                    <input type="text" class="form-control" id="userPhotoURL">
+                </div>
+
+                <div class="row">
+                    <h3><b>Survey Questions</b></h3>
+                </div>
+
+                <!--Survey Question 1-->
+                <div class="form-group">
+                    <label for="question1">
+                        <h5>1. You see yourself as a punctual person.</h5>
+                    </label>
+                    <select class="form-control col-md-2" id="question1">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <!--Survey Question 2-->
+                <div class="form-group">
+                    <label for="question2">
+                        <h5>2. You enjoy supreme pizza - the more toppings the better.</h5>
+                    </label>
+                    <select class="form-control col-md-2" id="question2">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <!--Survey Question 3-->
+                <div class="form-group">
+                    <label for="question3">
+                        <h5>3. You enjoy the music played on most major radio stations.</h5>
+                    </label>
+                    <select class="form-control col-md-2" id="question3">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <!--Survey Question 4-->
+                <div class="form-group">
+                    <label for="question4">
+                        <h5>4. You see yoursel as a glass half-empty person.</h5>
+                    </label>
+                    <select class="form-control col-md-2" id="question4">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <!--Survey Question 5-->
+                <div class="form-group">
+                    <label for="question5">
+                        <h5>5. You love outdoor activites like hiking, camping, and bikeriding.</h5>
+                    </label>
+                    <select class="form-control col-md-2" id="question5">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <!--Survey Question 6-->
+                <div class="form-group">
+                    <label for="question6">
+                        <h5>6. You easily adapt to unfamiliar situations.</h5>
+                    </label>
+                    <select class="form-control col-md-2" id="question6">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <!--Survey Question 7-->
+                <div class="form-group">
+                    <label for="question7">
+                        <h5>7. You would rather be a blunt than sugarcoat the truth.</h5>
+                    </label>
+                    <select class="form-control col-md-2" id="question7">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <!--Survey Question 8-->
+                <div class="form-group">
+                    <label for="question8">
+                        <h5>8. You love animals.</h5>
+                    </label>
+                    <select class="form-control col-md-2" id="question8">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <!--Survey Question 9-->
+                <div class="form-group">
+                    <label for="question9">
+                        <h5>9. You enjoy traveling to foreign locations and eating exotic foods.</h5>
+                    </label>
+                    <select class="form-control col-md-2" id="question9">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+                <!--Survey Question 10-->
+                <div class="form-group">
+                    <label for="question10">
+                        <h5>10. You consider yourself cautious over impulsive.</h5>
+                    </label>
+                    <select class="form-control col-md-2" id="question1">
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <!--Submit Button Row-->
+    <div class="row survey-row">
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+            Submit Your Answers!
+        </button>
+    </div>
+
+<footer class="footer">
+    <div class="container">
+        <p>
+            <a href="/api/friends">API Friends List</a> | 
+            <a href="#">GitHub Repo</a>
+        </p>
+    </div>
+</footer>
+
+
+   <!-- Modal -->
+   <div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Best Match</strong></h2>
+        </div>
+        <div class="modal-body">
+          <h2 id="friend-name"></h2>
+          <img id="friend-image"   alt="">
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<!-- FORM HANDLING JAVASCRIPT -->
+
+<script type="text/javascript">
+
+    $("#submit").on("click", function (event) {
+
+        // Prevents automatic refresh
+        event.preventDefault();
+
+        // Grabs all form elements:
+        var currentUserData = {
+            name: $("#userNameInput").val().trim(),
+            image: $("#userPhotoURL").val().trim(),
+            scores: [
+                $("#question1").val(),
+                $("#question2").val(),
+                $("#question3").val(),
+                $("#question4").val(),
+                $("#question5").val(),
+                $("#question6").val(),
+                $("#question7").val(),
+                $("#question8").val(),
+                $("#question9").val(),
+                $("#question10").val(),
+            ],
+        };
+
+        // Server-side testing to see if data was in fact retrieved from the form:
+        // console.log("You entered: " + currentUserData);
+
+        // AJAX call to POST the data into the friends API.
+        $.post("/api/friends", currentUserData,
+            function (data) {
+
+                // Test to see if it works
+                alert("WORKING");
+
+                // Grab the AJAX result for the best friend match
+                // To be coded
+                $("#friend-name").text(data.name);
+                $("#friend-image").attr("src", data.image);
+
+                // Display the modal
+                $("#results-modal").modal("toggle");
+
+            });
+    });
+
+</script>
