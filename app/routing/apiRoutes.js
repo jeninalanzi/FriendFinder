@@ -8,10 +8,6 @@
 const friendsData = require("../data/friends.js");
 const arraySort = require("array-sort");
 
-const publicImages = express.static(path.join(__dirname, './app/public/images'));
-app.use('/images', publicImages);
-
-
 // =========================================================
 // All ROUTING is handled below:
 // =========================================================
