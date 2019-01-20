@@ -1,6 +1,7 @@
 {
   "name": "FriendFinder",
   "version": "1.0.0",
+  "description": "",
   "main": "server.js",
   "dependencies": {
     "array-sort": "^1.0.0",
@@ -12,16 +13,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jeninalanzi/FriendFinder.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/jeninalanzi/FriendFinder/issues"
   },
-  "homepage": "https://github.com/jeninalanzi/FriendFinder#readme",
-  "description": ""
+  "homepage": "https://github.com/jeninalanzi/FriendFinder#readme"
 }

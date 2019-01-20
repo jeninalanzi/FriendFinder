@@ -8,6 +8,9 @@
 const friendsData = require("../data/friends.js");
 const arraySort = require("array-sort");
 
+const publicImages = express.static(path.join(__dirname, './app/public/images'));
+app.use('/images', publicImages);
+
 
 // =========================================================
 // All ROUTING is handled below:
@@ -43,8 +46,8 @@ module.exports = function(app) {
            // ... then the loop which will go through each friend's individual score
            // and compare it to the current user's individual scores. (Then stored as "results")
            for (var i = 0; i < friendsData[b].scores.length; i++) {
-               results += parseInt(currentUserData.scores[i] - parseInt(friendsData[b].scores[i]))
-           };
+               results += Math.abs(parseInt(currentUserData.scores[i]) - parseInt(friendsData[b].scores[i]));
+           }
 
 
            // Once differences are calculated (by subtraction), it will take all the "difference" scores and put them into "results"
@@ -52,11 +55,11 @@ module.exports = function(app) {
            totalDifferenceArray.push({
                name: friendsData[b].name,
                image: friendsData[b].image,
-               totalDifference: Math.abs(results)
+               totalDifference:  results 
                    // This will remove negative integers from results and assign value of "results" into the totalDifference property.
            });
 
-       };
+       }
 
        // NEXT is for arraySort to sort all the differences in ascending order (least to most).
        // This is by using the array as the first argument, and the property in the second argument.
@@ -66,7 +69,7 @@ module.exports = function(app) {
        friendsData.push(currentUserData);
 
        // Server-side testing to the console to ensure desired output.
-       console.log("All the possible matches: " + totalDifferenceArray[0]);
+      // console.log("All the possible matches: " + totalDifferenceArray[0]);
        console.log("Your best match is: " + totalDifferenceArray[0].name);
        console.log("Their photo is here: " + totalDifferenceArray[0].image);
 

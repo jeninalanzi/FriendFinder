@@ -13,7 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
     <!--My own CSS Link-->
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 
     <title>FriendFinder | Take The Survey to Find a Friend!</title>
 
@@ -189,7 +189,7 @@
                     <label for="question10">
                         <h5>10. You consider yourself cautious over impulsive.</h5>
                     </label>
-                    <select class="form-control col-md-2" id="question1">
+                    <select class="form-control col-md-2" id="question10">
                         <option value="1">1 (Strongly Disagree)</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -269,8 +269,8 @@
                 $("#question7").val(),
                 $("#question8").val(),
                 $("#question9").val(),
-                $("#question10").val(),
-            ],
+                $("#question10").val()
+            ]
         };
 
         // Server-side testing to see if data was in fact retrieved from the form:
@@ -281,7 +281,7 @@
             function (data) {
 
                 // Test to see if it works
-                alert("WORKING");
+                // alert("WORKING");
 
                 // Grab the AJAX result for the best friend match
                 // To be coded

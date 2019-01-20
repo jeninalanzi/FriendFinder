@@ -10,7 +10,17 @@ var PORT = process.env.PORT || 8080;
 
 // Express data parsing
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json(   ));
+app.use(express.json());
+
+
+// Absolute paths for css and images folders.
+const publicPath = express.static(path.join(__dirname, './app/public/css'));
+const publicImages = express.static(path.join(__dirname, './app/public/images'));
+
+ //Jenina, this is a vitual path after the root level that
+ //it is defined.
+   app.use('/css', publicPath);
+    app.use('/images', publicImages);
 
 // ================================================================================
 
