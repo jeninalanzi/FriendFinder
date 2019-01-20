@@ -4,7 +4,7 @@
 var friendsData = [
     {
         name: "Jeffy",
-        image: "../images/jeffy.jpg",
+        image: "https://jzgl-friendfinder.herokuapp.com/images/jeffy.jpg",
         scores: [
             5,
             3,
@@ -20,7 +20,7 @@ var friendsData = [
     },
     {
         name: "Gustavo",
-        image: "../images/gustavo.jpg",
+        image: "https://jzgl-friendfinder.herokuapp.com/images/gustavo.jpg",
         scores: [
             4,
             2,
@@ -36,7 +36,7 @@ var friendsData = [
     },
     {
         name: "Lisa",
-        image: "../images/lisa.jpg",
+        image: "https://jzgl-friendfinder.herokuapp.com/images/lisa.jpg",
         scores: [
             3,
             3,
@@ -52,7 +52,7 @@ var friendsData = [
     },
     {
         name: "Harold",
-        image: "../images/harold.jpg",
+        image: "https://jzgl-friendfinder.herokuapp.com/images/harold.jpg",
         scores: [
             1,
             5,
